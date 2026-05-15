@@ -1,0 +1,12 @@
+name: function.yml
+
+on:
+  repository_dispatch:
+    types:
+      - update
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "called"
